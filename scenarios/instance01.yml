@@ -1,0 +1,49 @@
+name: Instance_01
+datetime: "2024-03-20 06:00:00"
+author: "Intuelle Research"
+
+flights:
+  - callsign: "AFR1234"
+    airline: "Air France"
+    aircraft: "A320"
+    wake_turbulence_cat: "Medium"
+    cost_index: 30
+    filed_plans:
+      - waypoints: [
+          [2.3522, 48.8566],  # Paris
+          [4.4778, 50.8505],  # Brussels
+          [6.7735, 51.2277]   # Düsseldorf
+        ]
+        altitudes: [330, 350, 350]  # Flight levels
+        speeds: [440, 450, 450]     # Knots
+        aircraft_category: "Medium"
+        delay_allowance: 300        # 5 minutes
+        preference_rank: 1
+
+      - waypoints: [
+          [2.3522, 48.8566],  # Paris
+          [5.1214, 52.3080],  # Amsterdam
+          [6.7735, 51.2277]   # Düsseldorf
+        ]
+        altitudes: [330, 370, 350]
+        speeds: [440, 460, 450]
+        aircraft_category: "Medium"
+        delay_allowance: 300
+        preference_rank: 2
+
+  - callsign: "BAW2468"
+    airline: "British Airways"
+    aircraft: "B777"
+    wake_turbulence_cat: "Heavy"
+    cost_index: 25
+    filed_plans:
+      - waypoints: [
+          [-0.4543, 51.4700],  # London Heathrow
+          [2.3522, 48.8566],   # Paris
+          [8.5500, 47.3667]    # Zurich
+        ]
+        altitudes: [350, 370, 370]
+        speeds: [480, 490, 470]
+        aircraft_category: "Heavy"
+        delay_allowance: 600    # 10 minutes
+        preference_rank: 1
